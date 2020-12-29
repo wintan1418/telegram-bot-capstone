@@ -1,2 +1,5 @@
 require_relative '../lib/bot'
-MyBot.new
+require_relative 'telegram/bot'
+
+# MyBot.new
+p "bots is running"
