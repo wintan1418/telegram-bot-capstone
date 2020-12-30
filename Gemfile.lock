@@ -7,23 +7,27 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
+    dad_jokes (0.1.2)
+      faraday (~> 0.13.1)
+      faraday_middleware (~> 0.12.2)
+      json (~> 1.8)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     dotenv (2.7.6)
     equalizer (0.0.11)
-    faraday (1.2.0)
+    faraday (0.13.1)
       multipart-post (>= 1.2, < 3)
-      ruby2_keywords
-    giggle (0.0.0)
+    faraday_middleware (0.12.2)
+      faraday (>= 0.7.4, < 1.0)
     httparty (0.15.7)
       multi_xml (>= 0.5.2)
     ice_nine (0.11.2)
     inflecto (0.0.2)
+    json (1.8.6)
     movie_quotes (0.1.3)
       httparty (~> 0.15.5)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
-    ruby2_keywords (0.0.2)
     telegram-bot-ruby (0.14.0)
       faraday
       inflecto
@@ -39,8 +43,8 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  dad_jokes (~> 0.1.2)
   dotenv
-  giggle (~> 0.0.0)
   movie_quotes (~> 0.1.3)
   telegram-bot-ruby (~> 0.14.0)
 
