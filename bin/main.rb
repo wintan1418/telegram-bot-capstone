@@ -1,6 +1,6 @@
 
 require_relative '../lib/bot'
-Juthbot.new
+Inspbot.new
 
 # token = "1458568231:AAH6dSUJIyauebLVkg4MwqyYCw4RIOJeanA"
 # Telegram::Bot::Client.run(token) do |bot|
