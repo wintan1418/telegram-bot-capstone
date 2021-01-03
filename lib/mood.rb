@@ -11,3 +11,4 @@ class Mood
     Methods.rand_string(@mood)
   end
 end
+
