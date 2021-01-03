@@ -6,7 +6,7 @@ AllCops:
   DisplayCopNames: true
 
 Layout/LineLength:
-  Max: 280
+  Max: 400
 Metrics/MethodLength:
   Max: 20
 Metrics/AbcSize:
