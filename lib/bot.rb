@@ -1,5 +1,7 @@
 require 'telegram/bot'
 require_relative './joke'
+require_relative './quote'
+require_relative './mood'
 class Inspbot
   attr_reader :text
 
@@ -27,7 +29,7 @@ class Inspbot
 
       else message.text != '/programmingjoke' || '/inspirationalquotes'
            alert = "sorry,for now we have only '/quotes' and '/programmingjoke'
-                  and '/mood' for you,type either of the two to enjoy"
+                  and '/mood' for you,type either of the three to enjoy"
            bot.api.send_message(chat_id: message.chat.id, text: alert)
       end
     end
