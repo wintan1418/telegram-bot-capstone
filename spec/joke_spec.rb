@@ -1,7 +1,7 @@
 require_relative '../lib/joke'
 
 describe Jokes do
-  let(:joke) {  Jokes.new }
+  let(:joke) { Jokes.new }
   describe '#initialize' do
     it 'makes an instance of Jokes' do
       expect(joke).to be_a Jokes

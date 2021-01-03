@@ -1,8 +1,7 @@
 require_relative '../lib/quote'
 
 describe Quotes do
-
-let(:quote) {Quotes.new }
+let(:quote) { Quotes.new }
 describe '#initialize' do
   it 'makes an instance of quotes' do
     expect(quote).to be_a Quotes

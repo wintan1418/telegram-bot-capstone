@@ -1,7 +1,7 @@
 require_relative '../lib/mood'
 
 describe Mood do
-  let(:mood) {  Mood.new }
+  let(:mood) { Mood.new }
   describe '#initialize' do
     it 'makes an instance of quotes' do
       expect(mood).to be_a Mood
