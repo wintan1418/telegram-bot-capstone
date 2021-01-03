@@ -81,7 +81,6 @@ You can use the commands defined in the [Available commands section](#Commands-t
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/SajjadAhmad14/Telegram-bot/issues).
 
 ## Show your support
 
