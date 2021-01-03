@@ -3,43 +3,35 @@ telegram-bot-capstone-project
 
 Microverse Ruby Capstone Project
 
-## Telegram Bot(Programming_is_fun)
+## Telegram Bot(Inspbot)
 
-- This is Telegram Bot implemented using Ruby And [Telegram bot API](https://core.telegram.org/bots/api)
-- You can search for 'programming_is_fun', which is my Bot name.
-- This bot accepts a few commands and return you an article about programming, a saying or joke about programming.
+- This Telegram Bot has being built implementing  Ruby And [Telegram bot API](https://core.telegram.org/bots/api)
+- simply search for 'Inspbot',  my Bot name.
+- This bot behaves in accepting  commands and returning jokes,quotes or moods at random concerning programming.
 
 # Rspec Tests
 
-![screenshot](./images/tests.png)
+![screenshot](./images/image1.png)
 
-- Rspec tests are in these files: jokes_spec.rb, sayings_spec.rb, articles_spec.rb and reuse_spec.rb in spec directory.
-- Tests can be found for below mentioned instance methods.
+- you can locate my Rspec tests  in these files: joke_spec.rb, quotes_spec.rb, mood_spec.rb in spec folder.
 
-- '#initialize' for Jokes
-- '#initialize' for Sayings
-- '#initialize' for Articles
-- '#random_joke'
-- '#random_saying'
-- '#random_article'
-- '#rand_string'
 
 # How to Run Tests
 
-- You need to have Rspec Gem installed on your system or If you use use Code editor, you don't need Gem to be included
-- Tests can be run using rspec or rspec --format documentation command
-- Screenshot of passing spec is attached above
+- You need to download Rspec Gem and install on your system using any code editor of your choice
+- you can run tests by running rspec or rspec --format documentation command
+
 
 # Commands to Run the Bot
 This Bot has five commands
 
-- [x] /start - It gives the information that how to use othe commands to get the desired info.
-- [x] /stop  - It says "Don't say bye, your name!".
-- [x] /article - It gives you a random article related to any topic of programming.
-- [x] /joke - It displays a random joke related to programming.
-- [x] /saying - It displays a random saying related to programming.
+- [x] /start - It gives the instruction on  how to use othe commands to get the your info.
+- [x] /quit  - persuades you not to quit".
+- [x] /programmingjoke - It gives you a random selected programming joke related to any topic of programming.
+- [x] /mood - gives a random mood emoji .
+- [x] /quote - It gives a random quote related to programming.
 
-![screenshot](./images/application.png)
+![screenshot](./images/image2.png)
 
 # Install and Run the Bot Locally
 
@@ -50,11 +42,11 @@ In order to run the Bot, you need to install RUBY in your computer. For windows 
 
 **Step 1**<br>
 Clone the repo in your local folder where you want to run it<br>
-`git clone https://github.com/SajjadAhmad14/Telegram-bot.git`.<br>
+`https://github.com/wintan1418/telegram-bot-capstone`.<br>
 **Step 2**<br>
 Run `bundle install` to install the gems from the `Gemfile`.<br>
 **Step 3**<br>
-Download the [Telegram app](https://desktop.telegram.org/), create an account and talk to the [Botfather](https://t.me/botfather). Follow the instructions and create a bot, you will then receive an API Token that looks like this: `1347431199:AAH4hPt6PDiJB4swk23Lb4oOzwocjKpba0S6` and the link to your bot.<br>
+Download the [Telegram app](https://desktop.telegram.org/) if you dont have, create an account and talk to the [Botfather](https://t.me/botfather). Follow the instructions and create a bot, you will then receive an API Token  and the link to your bot.<br>
 **Step 4**<br>
 Run `touch .env` on your terminal to create the `.env` file in root of the directory. Then add your token in the required field `TELEGRAM_KEY=` inside the file.<br>
 **Step 5**<br>
@@ -70,18 +62,16 @@ You can use the commands defined in the [Available commands section](#Commands-t
 
 - Ruby
 - Telegram API
-- Dotenv
-- Rubocop
 - Rspec
 - VsCode
 
 ## Authors
 
-👤 **Sajjad Ahmad**
+**Oluwadare Juwon**
 
-- Github: [@githubhandle](https://github.com/SajjadAhmad14)
-- Twitter: [@twitterhandle](https://twitter.com/Sajjad_Ahmad14)
-- Linkedin: [linkedin](https://linkedin.com/sajjad-ahmad-86102117a/)
+- GitHub: [@wintan1418](https://github.com/wintan1418)
+- Twitter: [@juwonoluwadare](https://twitter.com/oluwadarejuwon)
+- LinkedIn: [Oluwadare Juwon](https://www.linkedin.com/in/oluwadare-juwon-048a391a8/)
 
 ## 🤝 Contributing
 
