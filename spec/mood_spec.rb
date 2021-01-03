@@ -1,16 +1,16 @@
-require_relative '../lib/quote'
+require_relative '../lib/mood'
 
-describe Quotes do
-  let(:quote) {  Quotes.new }
+describe Mood do
+  let(:mood) {  Mood.new }
   describe '#initialize' do
     it 'makes an instance of quotes' do
-      expect(quote).to be_a Quotes
+      expect(mood).to be_a Mood
     end
   end
 
   describe '#random_quotes' do
     it 'it gives back a random joke as a String' do
-      expect(quote.random_quotes).to be_a String
+      expect(mood.random_mood).to be_a String
     end
   end
 end
