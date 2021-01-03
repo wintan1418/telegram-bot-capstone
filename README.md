@@ -56,7 +56,7 @@ Open the link to the bot that you received from the Botfather.<br>
 **Step 7**<br>
 You can use the commands defined in the [Available commands section](#Commands-to-Run-the-Bot) defined above.<br>
 
-## This Bot is Live Now. You can click [Here](https://t.me/FunProgrammingBot) to Play with Bot
+## This Bot is Live Now. You can click [Here](https://http://t.me/Juthybot) to Play with Bot
 
 ## Built With
 
