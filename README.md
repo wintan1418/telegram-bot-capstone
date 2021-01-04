@@ -46,14 +46,8 @@ Clone the repo in your local folder where you want to run it<br>
 **Step 2**<br>
 Run `bundle install` to install the gems from the `Gemfile`.<br>
 **Step 3**<br>
-Download the [Telegram app](https://desktop.telegram.org/) if you dont have, create an account and talk to the [Botfather](https://t.me/botfather). Follow the instructions and create a bot, you will then receive an API Token  and the link to your bot.<br>
-**Step 4**<br>
-Run `touch .env` on your terminal to create the `.env` file in root of the directory. Then add your token in the required field `TELEGRAM_KEY=` inside the file.<br>
-**Step 5**<br>
 Run `ruby bin/main.rb` to start the bot.<br>
-**Step 6**<br>
-Open the link to the bot that you received from the Botfather.<br>
-**Step 7**<br>
+**Step 4**<br>
 You can use the commands defined in the [Available commands section](#Commands-to-Run-the-Bot) defined above.<br>
 
 ## This Bot is Live Now. You can click [Here](https://t.me/Juthybot) to Play with Bot
