@@ -7,7 +7,7 @@ require '../config'
 class Inspbot
   attr_reader :text
 
-  def initialize
+ def initialize
     Telegram::Bot::Client.run(TOKEN_KEY) do |bot|
       bot.listen do |message|
         case message.text
