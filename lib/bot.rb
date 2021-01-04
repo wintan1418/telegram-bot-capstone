@@ -30,7 +30,7 @@ class Inspbot
           bot.api.send_message(chat_id: message.chat.id, text: mood.random_mood)
 
         else message.text != '/programmingjoke' || '/inspirationalquotes'
-             alert = "sorry,we have only '/quotes', '/programmingjoke','/mood'
+             alert = "sorry,we have only '/quotes', '/programmingjoke','/mood'"
              bot.api.send_message(chat_id: message.chat.id, text: alert)
         end
       end
