@@ -20,7 +20,7 @@ class Inspbot
         when '/programmingjoke'
           joke = Jokes.new
           bot.api.send_message(chat_id: message.chat.id, text: joke.random_jokes)
-        when '/quotes' 
+        when '/quotes'
           quote = Quotes.new
           bot.api.send_message(chat_id: message.chat.id, text: quote.random_quotes)
 
