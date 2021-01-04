@@ -5,8 +5,10 @@ require_relative './mood'
 class Inspbot
   attr_reader :text
 
-  token = '1458568231:AAH6dSUJIyauebLVkg4MwqyYCw4RIOJeanA'
-  Telegram::Bot::Client.run(token) do |bot|
+  # token = 'none'
+  TOKEN = None
+
+  Telegram::Bot::Client.run(TOKEN) do |bot|
     bot.listen do |message|
       case message.text
       when '/start'
