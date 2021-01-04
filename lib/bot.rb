@@ -25,9 +25,9 @@ class Inspbot
           quote = Quotes.new
           bot.api.send_message(chat_id: message.chat.id, text: quote.random_quotes)
 
-        when '/mood'
-          mood = Mood.new
-          bot.api.send_message(chat_id: message.chat.id, text: mood.random_mood)
+        # when '/mood'
+        #   mood = Mood.new
+        #   bot.api.send_message(chat_id: message.chat.id, text: mood.random_mood)
 
         else message.text != '/programmingjoke' || '/inspirationalquotes'
              alert = "sorry,we have only '/quotes', '/programmingjoke','/mood'"
