@@ -2,22 +2,22 @@ require 'telegram/bot'
 require_relative './joke'
 require_relative './quote'
 require_relative './mood'
+require '../config'
+
 class Inspbot
-  attr_reader :text
+attr_reader :text
 
-  # token = 'none'
-  TOKEN = None
-
-  Telegram::Bot::Client.run(TOKEN) do |bot|
+def initialize
+  Telegram::Bot::Client.run(TOKEN_KEY) do |bot|
     bot.listen do |message|
       case message.text
       when '/start'
         bot.api.send_message(chat_id: message.chat.id, text: "Hello,i am a bot, Welcome,
-         #{message.from.first_name} press /programmingjoke to get chuckling jokes to ease you and /quotes
-         for inspirational quotes or '/mood' for a mood game ")
+        #{message.from.first_name} press /programmingjoke to get chuckling jokes to ease you and /quotes
+        for inspirational quotes or '/mood' for a mood game ")
       when '/quit'
         bot.api.send_message(chat_id: message.chat.id, text: "#{message.from.first_name},
-         i wish you did not press that,you can reconsider!!,bye anyways")
+        i wish you did not press that,you can reconsider!!,bye anyways")
       when '/programmingjoke'
         joke = Jokes.new
         bot.api.send_message(chat_id: message.chat.id, text: joke.random_jokes)
@@ -27,13 +27,14 @@ class Inspbot
 
       when '/mood'
         mood = Mood.new
-        bot.api.send_message(chat_id: message.chat.id, text: mood.random_mood)
+          bot.api.send_message(chat_id: message.chat.id, text: mood.random_mood)
 
       else message.text != '/programmingjoke' || '/inspirationalquotes'
-           alert = "sorry,for now we have only '/quotes' and '/programmingjoke'
-                  and '/mood' for you,type either of the three to enjoy"
-           bot.api.send_message(chat_id: message.chat.id, text: alert)
+            alert = "sorry,for now we have only '/quotes' and '/programmingjoke'
+                and '/mood' for you,type either of the three to enjoy"
+            bot.api.send_message(chat_id: message.chat.id, text: alert)
       end
     end
   end
+end
 end
