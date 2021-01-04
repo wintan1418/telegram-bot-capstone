@@ -28,7 +28,6 @@ This Bot has five commands
 - [x] /start - It gives the instruction on  how to use othe commands to get the your info.
 - [x] /quit  - persuades you not to quit".
 - [x] /programmingjoke - It gives you a random selected programming joke related to any topic of programming.
-- [x] /mood - gives a random mood emoji .
 - [x] /quote - It gives a random quote related to programming.
 
 ![screenshot](./images/image2.png)

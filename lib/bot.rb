@@ -1,7 +1,6 @@
 require 'telegram/bot'
 require_relative './joke'
 require_relative './quote'
-require_relative './mood'
 require '../config'
 
 class Inspbot
@@ -14,20 +13,16 @@ class Inspbot
         when '/start'
           bot.api.send_message(chat_id: message.chat.id, text: "Hello,i am a bot, Welcome,
         #{message.from.first_name} press /programmingjoke to get chuckling jokes to ease you and /quotes
-        for inspirational quotes or '/mood' for a mood game ")
+        for inspirational quotes  ")
         when '/quit'
           bot.api.send_message(chat_id: message.chat.id, text: "#{message.from.first_name},
         i wish you did not press that,you can reconsider!!,bye anyways")
         when '/programmingjoke'
           joke = Jokes.new
           bot.api.send_message(chat_id: message.chat.id, text: joke.random_jokes)
-        when '/quotes'
+        when '/quotes' 
           quote = Quotes.new
           bot.api.send_message(chat_id: message.chat.id, text: quote.random_quotes)
-
-        # when '/mood'
-        #   mood = Mood.new
-        #   bot.api.send_message(chat_id: message.chat.id, text: mood.random_mood)
 
         else message.text != '/programmingjoke' || '/inspirationalquotes'
              alert = "sorry,we have only '/quotes', '/programmingjoke','/mood'"
