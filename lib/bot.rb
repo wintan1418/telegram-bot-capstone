@@ -11,7 +11,7 @@ class Inspbot
       bot.listen do |message|
         case message.text
         when '/start'
-          bot.api.send_message(chat_id: message.chat.id, text: "Hello,i am a bot, Welcome,
+          bot.api.send_message(chat_id: message.chat.id, text: "Hello,i am JUST a bot, Welcome,
         #{message.from.first_name} press /programmingjoke to get chuckling jokes to ease you and /quotes
         for inspirational quotes  ")
         when '/quit'
