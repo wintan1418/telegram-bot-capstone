@@ -1,7 +1,7 @@
 require 'telegram/bot'
 require_relative './joke'
 require_relative './quote'
-require '../config'
+require_relative '../config'
 
 class Inspbot
   attr_reader :text
